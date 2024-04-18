@@ -1,4 +1,53 @@
 body {
-    background-color: blue;
+    background-image: url('../../../media/images/background.max-800x600.png');
+    background-size: cover;
     color: azure;
+    margin: 0;
+    padding: 0;
+}
+
+.index_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(33, 8, 1);
+    z-index: 10000000;
+}
+
+.boddy1 {
+    position: relative;
+    top: 80px;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+a {
+    color: bisque;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 0px 10px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    justify-self: center;
+    align-self: center;
 }

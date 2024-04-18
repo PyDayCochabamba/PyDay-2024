@@ -7,8 +7,23 @@
 
 <!-- replace everything below with: -->
 {% block content %}
-    <h1>Este es un título en h1</h1>
-    {{ page.body|richtext }}
+    <nav class='index_nav'> 
+        <div class="container">
+            <a class='contenedor_logo' href="">
+                <img class='logo' src='../../../media/images/pythochita_blanco.max-165x165.png'>
+            </a>
+            <ul class='navbar'>
+                <li><a href="">Speakers</a></li>
+                <li><a href="">Cronograma</a></li>
+                <li><a href="">Sponsors</a></li>
+                <li><a href="">COC</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
     
-    {{ page.body2|richtext }}
+    <div class='boddy1'>
+        {{ page.body|richtext }}
+        {{ page.body2|richtext }}
+    </div>
 {% endblock %}
