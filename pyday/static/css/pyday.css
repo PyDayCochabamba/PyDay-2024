@@ -31,7 +31,7 @@ h1 {
     font-family: 'Coiny';
     font-size: 50px;
     background: linear-gradient(to right, var(--title-color-primary),rgb(255, 0, 0));
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent; 
 }
 
@@ -39,7 +39,7 @@ h2 {
     font-family: 'Coiny';
     font-size: 35px;
     background: linear-gradient(to right, var(--title-color-tertiary),var(--title-color-quaternary));
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent; 
 }
 
@@ -104,7 +104,7 @@ li {
 
 .button {
     background-color: var(--title-color-primary);
-    padding: 10px 35px;
+    padding: 5px 40px;
     border-radius: 30px;
     color: var(--paragraph-color-secondary);
 }
@@ -121,7 +121,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 400px;
+    padding: 20px 300px 0px 300px;
 }
 
 #Home>p {
@@ -129,7 +129,11 @@ li {
 }
 
 .logo_inicio {
-    width: 500px;
+    width: 50%;
+}
+
+.CommingSoon {
+    width: 30%;
 }
 
 .boddy1 {
