@@ -1,5 +1,7 @@
 # PyDay-2024
-
+## entorno virtual + instalacion
+- python -m venv venv
+- pip install wagtail
 ## comandos migracion
 - python manage.py makemigrations
 - python manage.py migrate
