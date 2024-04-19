@@ -7,6 +7,7 @@
 
 <!-- replace everything below with: -->
 {% block content %}
+<<<<<<< HEAD
     <h1>Este es un título en h1</h1>
     {{ page.body|richtext }}
     
@@ -14,5 +15,41 @@
 
     <div>
         fotter
+=======
+    <nav> 
+        <div class="nav_container">
+            <a class='contenedor_logo' href="">
+                <img class='logo' src='../../../media/images/pythochita_blanco.max-165x165.png'>
+            </a>
+            <ul class='navbar'>
+                <!-- 
+                    <li><a href="">Speakers</a></li>
+                    <li><a href="">Cronograma</a></li>
+                -->
+                <li><a href="Home">PyDay</a></li>
+                <li><a href="">Sponsors</a></li>
+                <li><a href="">COC</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="Home">
+        <img class="logo_inicio" src="../../../media/images/pytho_cochabamba_fondo_negro.png" alt="">
+        <img class="CommingSoon" src="../../../media/images/ComingSoon.png" alt="">
+        <p class="button">15 de Junio</p>
+        <p>Muy pronto tendremos nuestro primer PyDay en Cochabamba</p>
+        <p>Un evento donde se reunirá la comunidad para aprender y celebrar un día completo en torno a Python, uno de los lenguajes de programación másversátil y usado en la industria, ¡disfrutando de diferentes ponencias y talleres!</p>
+    </section>
+
+    <div class='boddy1'>
+        <h1>Esto es un encabezado h1</h1>
+        <h2>Esto es un encabezado h2</h2>
+        <h3>Esto es un encabezado h3</h3>
+        <p>Esto es un texto de párrafo</p>
+
+        {{ page.body|richtext }}
+        {{ page.body2|richtext }}
+>>>>>>> 752b1d281ad3452eded6655d1a949c700e3b6d5f
     </div>
 {% endblock %}
