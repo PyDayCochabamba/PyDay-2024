@@ -9,7 +9,7 @@
 {% block content %}
     <nav> 
         <div class="nav_container">
-            <a class='contenedor_logo' href="">
+            <a href="#Home">
                 <img class='logo' src='../../../media/images/pythochita_blanco.max-165x165.png'>
             </a>
             <ul class='navbar'>
@@ -17,10 +17,10 @@
                     <li><a href="">Speakers</a></li>
                     <li><a href="">Cronograma</a></li>
                 -->
-                <li><a href="Home">PyDay</a></li>
-                <li><a href="">Sponsors</a></li>
-                <li><a href="">COC</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#Home">PyDay</a></li>
+                <!-- <li><a href="">Sponsors</a></li>-->
+                <li><a href="#COC">COC</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -33,13 +33,70 @@
         <p>Un evento donde se reunirá la comunidad para aprender y celebrar un día completo en torno a Python, uno de los lenguajes de programación másversátil y usado en la industria, ¡disfrutando de diferentes ponencias y talleres!</p>
     </section>
 
-    <div class='boddy1'>
+    <!--<div class='boddy1'>
         <h1>Esto es un encabezado h1</h1>
         <h2>Esto es un encabezado h2</h2>
         <h3>Esto es un encabezado h3</h3>
         <p>Esto es un texto de párrafo</p>
-
+        
         {{ page.body|richtext }}
         {{ page.body2|richtext }}
-    </div>
+        
+    </div>-->
+    <section class="div_COC" id="COC">
+        <h1>Código de Conducta (COC)</h1>
+        <div>
+            <div class='asistente'>
+                <h2>Para Asistentes</h2>
+                <p>PyDay es un evento inclusivo y seguro para todos los participantes. Como asistente, te pedimos que sigas estas reglas:</p>
+                <ul class="COC">
+                    <li>Trata a todos los participantes con respeto y cortesía, independientemente de su identidad, género, orientación sexual, habilidad, apariencia física, religión o cualquier otra característica personal.</li>
+                    <li>Respeta el espacio y las opiniones de los demás. No toleramos el acoso ni la discriminación en ninguna forma.</li>
+                    <li>Mantén un comportamiento adecuado en todo momento durante el evento y las actividades relacionadas.</li>
+                    <li>Si experimentas o presencias cualquier forma de acoso, te alentamos a que lo informes a los organizadores de PyDay Cochabamba inmediatamente.</li>
+                </ul>
+            </div>
+            <div class='speaker'>
+                <h2>Para Speakers y Talleristas</h2>
+                <p>Como speaker o tallerista, tu contribución es fundamental para el éxito de PyDay. Te pedimos que cumplas con las siguientes pautas:</p>
+                <ul class="COC">
+                    <li>Proporciona una presentación o taller respetuoso y libre de contenido ofensivo o discriminatorio.</li>
+                    <li>Fomenta un entorno inclusivo donde todos los participantes se sientan bienvenidos y valorados.</li>
+                    <li>Respeta el tiempo asignado para tu presentación o taller y permite la participación de la audiencia cuando sea adecuado.</li>
+                    <li>Evita cualquier tipo de conducta inapropiada durante tu participación en PyDay Cochabamba 2024.</li>
+                </ul>
+            </div>
+            <div class='staffs'>
+                <h2>Para Staffs</h2>
+                <p>Como miembro del staff de PyDay, tienes la responsabilidad de mantener un ambiente seguro y acogedor para todos los participantes. Por favor, sigue estas pautas:</p>
+                <ul class="COC">
+                    <li>Sé un ejemplo de comportamiento respetuoso y profesional en todo momento.</li>
+                    <li>Escucha y atiende las preocupaciones de los participantes de manera justa y diligente.</li>
+                    <li>Actúa con prontitud y decisión en caso de presenciar o recibir informes de cualquier forma de acoso o comportamiento inapropiado.</li>
+                    <li>Respeta la privacidad y la confidencialidad de cualquier información sensible que puedas manejar como parte del equipo de PyDay Cochabamba.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id='contacto'>
+        <h1>Contáctanos</h1>
+        <div class='container_row_contacto'>
+            <img src='../../../media/images/pythochita_blanco.max-800x600.png' alt="">
+            <div class='container_column_contacto'>
+                <a href="https://www.facebook.com/pydaycbba" target='_blank'>
+                    <img src="../../../media/images/logo-facebook.png" alt="">
+                    <span>@pydaycbba</span>
+                </a>
+                <a href="https://www.instagram.com/pydaycbba/" target='_blank'>
+                    <img src="../../../media/images/logo-instagram.png" alt="">
+                    <span>@pydaycbba</span>
+                </a>
+                <a href="mailto: pydaycbba@gmail.com" target='_blank'>
+                    <img src="../../../media/images/logo-email.png" alt="">
+                    <span>pydaycbba@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
 {% endblock %}
