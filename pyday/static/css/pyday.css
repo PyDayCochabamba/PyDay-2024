@@ -161,44 +161,24 @@ li {
   justify-content: center;
   gap: 4px;
 }
-.container-logo{
+.container-logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 20%;
 }
 
-.cont1{
+.cont1 {
   display: flex;
   justify-items: center;
   justify-content: center;
 }
-.logo1{
-  height: 90px;
-  width: 60;
-}
-.logo2{
-  height: 90px;
-  width: 60;
-}
-.container-text{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-.text{
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Every Week";
-  color: var(--title-color-primary);
-}
-.icon {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  gap: 20px;
-  margin-bottom: 15px;
-}
-.red{
-  height: 30px;
+.logo1 {
+  height: 120px;
   width: auto;
 }
+.logo2 {
+  height: 120px;
+  width: auto;
+}
+
