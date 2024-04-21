@@ -54,6 +54,7 @@ p {
     font-size: 20px;
     margin: 10px 0px;
 }
+/* navbar start */
 
 nav {
     position: fixed;
@@ -63,7 +64,7 @@ nav {
     height:max-content;
     background-color: rgb(33, 8, 1);
     background: linear-gradient(to right, #451B5A, #201A3E);
-    z-index: 10000000;
+    z-index: 100;
 }
 
 .logo {
@@ -79,6 +80,28 @@ nav {
     padding: 10px 40px;
     align-items: center;
 }
+
+.navbar a {
+    margin-top: 100;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Coiny';
+    font-weight: bold;
+    color: var(--title-color-primary);
+    padding: 0 10px 0 10px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.navbar a:hover {
+    background: linear-gradient(to right, var(--title-color-tertiary),var(--title-color-quaternary));
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a.active {
+    color: var(--title-color-secondary);
+}
+/* navbar end */
 
 a {
     color: var(--title-color-primary);
@@ -128,7 +151,7 @@ a:hover {
 
 /* Sección Codigo de Conducta */
 .div_COC {
-    padding: 70px 20px 0px 20px;
+    padding: 4% 4% 4% 4%;
 }
 
 .COC {
