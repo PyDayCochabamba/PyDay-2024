@@ -286,15 +286,17 @@ li {
     top: 80px;
 }
 .footer {
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to right, #451b5a, #201a3e);
-  z-index: 10000000;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #451b5a, #201a3e);
+    z-index: 10000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    overflow: visible;
 }
 .container-logo {
   display: flex;
