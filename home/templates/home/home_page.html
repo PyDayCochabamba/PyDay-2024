@@ -17,10 +17,10 @@
                     <li><a href="">Speakers</a></li>
                     <li><a href="">Cronograma</a></li>
                 -->
-                <li><a href="#Home">PyDay</a></li>
+                <li id="home"><a href="#Home">PyDay</a></li>
                 <!-- <li><a href="">Sponsors</a></li>-->
-                <li><a href="#COC">COC</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li id="coc"><a href="#COC">COC</a></li>
+                <li id="contact"><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section id='contacto'>
+    <section id='contact'>
         <h1>Contáctanos</h1>
         <div class='container_row_contacto'>
             <img src='../../../media/images/pythochita_blanco.max-800x600.png' alt="">
@@ -99,4 +99,27 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar li a');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const navActive = document.querySelector(`.navbar li a[href="#${id}"]`);
+
+                    if (entry.isIntersecting) {
+                        navActive.classList.add('active');
+                    } else {
+                        navActive.classList.remove('active');
+                    }
+                });
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script> 
 {% endblock %}

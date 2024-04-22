@@ -99,7 +99,8 @@ nav {
 }
 
 .navbar a.active {
-    color: var(--title-color-secondary);
+    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 /* navbar end */
 
