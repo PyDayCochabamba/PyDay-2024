@@ -98,8 +98,9 @@ nav {
     color: transparent;
 }
 
-.navbar a:active {
-    color: var(--title-color-secondary);
+.navbar a.active {
+    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 
 /* navbar end */
@@ -229,7 +230,7 @@ li {
 }
 
 
-/* Sección Contact*/
+/* Sección Contacto*/
 #contact {
     background: radial-gradient(var(--background-color-secondary), var(--background-color-primary)) padding-box;
     display: flex;
