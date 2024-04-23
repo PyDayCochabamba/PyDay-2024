@@ -230,36 +230,36 @@ li {
 
 
 /* Sección Contacto*/
-#contacto {
+#contact {
     background: radial-gradient(var(--background-color-secondary), var(--background-color-primary)) padding-box;
     display: flex;
     flex-direction: column;
     padding: 70px 20px 70px 20px;
 }
 
-#contacto>h1 {
+#contact>h1 {
     text-align: center;
 }
 
-.container_row_contacto {
+.container_row_contact {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.container_column_contacto {
+.container_column_contact {
     display: flex;
     flex-direction: column;
 }
 
-.container_row_contacto>img {
+.container_row_contact>img {
     width: 250px;
     height: fit-content;
     margin-right: 50px;
 }
 
-.container_column_contacto>a {
+.container_column_contact>a {
     display: flex;
     flex-direction: row;
     font-family: 'Montserrat';
@@ -268,7 +268,7 @@ li {
     margin-bottom: 15px;
 }
 
-.container_column_contacto>a>img {
+.container_column_contact>a>img {
     width: 30px;
     height: fit-content;
     margin-right: 10px;
