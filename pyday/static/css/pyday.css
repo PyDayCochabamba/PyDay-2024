@@ -280,3 +280,50 @@ li {
     top: 80px;
 }
 
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #451b5a, #201a3e);
+    z-index: 10000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    overflow: visible;
+}
+.container-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 15px;
+}
+
+.cont1 {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo1 {
+  height: 120px;
+  width: auto;
+}
+.logo2 {
+  height: 120px;
+  width: auto;
+}
+.container_column_contactofooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+
+}
+.container_column_contactofooter>a>img {
+  width: 30px;
+  height: fit-content;
+  margin-right: 10px;
+}
